@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700&family=Inter:wght@400;600;700&family=Oswald:wght@400;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="sass.css">
+        <script src="jquery.js"></script>
+    <title>website 1</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>LOGO</h1>
+        </div>
+        <div class="menu">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">service</a></li>
+                <li><a href="#">blogs</a></li>
+                <li><a href="#">contact</a></li>
+                <li><a href="#">footer</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div class="content">
+            <div class="icons">
+                <a href="#" class="fa-brands fa-facebook"></a>
+                <a href="#" class="fa-brands fa-twitter-square"></a>
+                <a href="#" class="fa-brands fa-instagram-square"></a>
+                <a href="#" class="fa-brands fa-linkedin"></a>
+            </div>
+            <h1>become a <span> web designer</span></h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident nostrum modi quia alias corporis animi in sapiente aperiam sint dolorum!</p>
+            <a href="#"><button>lets get started</button></a>
+        </div>
+        <div class="images">
+            <img src="images/Responsive-pana(1).svg" alt="">
+        </div>
+    </section>
+
+
+    <script>
+        $(document).ready(function(){
+            $('.menu .fa-bars').click(function(){
+                $(this).toggleClass('far fa-times');
+                $('nav').toggleClass('toggle');
+            })
+        })
+    </script>
+</body>
+</html>
